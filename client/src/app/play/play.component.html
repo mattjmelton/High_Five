@@ -1,0 +1,8 @@
+<div class="border">
+    <h1>Round !PH!</h1>
+    
+    <button [style.left.px]="cardOne.left" [style.top.px]="cardOne.top" [hidden]="switch" (click)="switch = true" (click)="takeCard(cardOne.val)" >{{cardOne.val}}</button>
+    <button [style.left.px]="cardTwo.left" [style.top.px]="cardTwo.top" [hidden]="switch2" (click)="switch2 = true">{{cardTwo.val}}</button>
+</div>
+<app-hand></app-hand>
+

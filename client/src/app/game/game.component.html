@@ -1,0 +1,26 @@
+<div class="border">
+    <h1>High Five</h1>
+
+    <form (submit)="joinPlayer(player)" >
+        <h2>Number of Players: {{allPlayers.length}}</h2>
+        <h2>Max Card Value: Five</h2>
+        <h2>Choose Your Player Name:
+            <select name="player" [(ngModel)]="player">
+                <option value="Le Maddog">Le Maddog</option>
+                <option value="PacerX">PacerX</option>
+                <option value="Blasterman">Blasterman</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Crazy Legs">Crazy Legs</option>
+            </select>
+            <input class="submit" type="submit" value="Choose a Character">
+        </h2>
+    </form>
+    <button class="startGame" (click)="triggerEvent()">START GAME</button>
+
+    <div class="players-list">
+        <p>Players:</p>
+        <p *ngFor="let character of allPlayers">{{ character.name }}: {{character.hand}}</p>
+    </div>
+</div>
+
+<app-hand></app-hand>

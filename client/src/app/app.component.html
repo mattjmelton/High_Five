@@ -1,0 +1,4 @@
+
+<app-game *ngIf="switch" (flipSwitch)="flipSwitch()" ></app-game>
+<app-play *ngIf="!switch"></app-play>
+<router-outlet></router-outlet>

@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .cards {
+    margin-left: 1px;
+    display: inline-block;
+    border: solid black 1px;
+    width: 19%;
+    text-align: center;
+    padding: 20px 0px;
+} */
+
+.value {
+    /* display: inline-block; */
+    /* margin: 0px 0px 0px 20%; */
+    text-align: center;
+}
+
+.amount {
+    /* display: inline-block; */
+    /* margin: 0px 0px 0px 20%; */
+    text-align: center;
+}
+
+.hand {
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.container {
+    border: solid 1px black;
+    width: 720px;
+    height: 75px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
